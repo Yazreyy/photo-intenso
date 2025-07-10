@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #000
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /*centre les liens horizontalement */
+    gap: 30px; /*espace entre les liens */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+nav ul li a {
+    text-decoration :none;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+nav ul li a:hover{
+    text-decoration: underline; /*surlignage au vol*/
+    color:#f78a76
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  margin: 0;
+  color: #f78a76
+}
+
+.hero-banner {
+  width:100vw;                /*largeur 100% de la fenetre* /
+  position: relative;         /* important pour éviter les débordements */
+  left: 50%;                 /* décalage à gauche de 50% */
+  right: 50%;                /* décalage à droite de 50% */
+  margin-left: -50vw;        /* contre décalage à gauche pour être pile à 0 */
+  margin-right: -50vw;       /* contre décalage à droite */
+  background-image: url("images/paysage.jpg"); 
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 10px;
+  color: #000;
+  text-align: center;
+}
+
+.hero-banner-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: #f78a76; 
+  margin-bottom: 20px;
+}
+
+.hero-banner-content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f78a76;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e67260;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 100px;
+    margin: 10px;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+}
+.article {
+    width: 30%;
+}
+
+footer .footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
