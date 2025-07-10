@@ -98,6 +98,53 @@ h1 {
   background-color: #e67260;
 }
 
+.central-description {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 80px 20px;
+  gap: 60px;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 90px;
+  width: 25%;
+}
+
+.text-block-gauche {
+  text-align: right;
+  align-items: flex-end; /* aligne les éléments à droite dans la colonne */
+}
+
+
+.text-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #25A2C3;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.text-item p {
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  margin-top: 12px;
+}
+
+.center-image img {
+  display: flex;
+  justify-content:center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f2f2f2;
+}
+
 .presentation {
     display: flex;
     justify-content: center;
