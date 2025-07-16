@@ -71,14 +71,14 @@ h1 {
 
 .hero-banner-content h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
+  font-size: 26px;
   color: #f78a76; 
   margin-bottom: 20px;
 }
 
 .hero-banner-content p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
 }
@@ -89,7 +89,7 @@ h1 {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   padding: 12px 24px;
-  border-radius: 6px;
+  border-radius: 2px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
@@ -124,7 +124,7 @@ h1 {
 .text-item h3 {
   font-family: 'Montserrat', sans-serif;
   color: #25A2C3;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
@@ -145,6 +145,47 @@ h1 {
   border: 5px solid #f2f2f2;
 }
 
+.avis-cta {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #e67260;
+  color: #fff;
+  width:100vw;                /*largeur 100% de la fenetre* /
+  position: relative;         /* important pour éviter les débordements */
+  left: 50%;                 /* décalage à gauche de 50% */
+  right: 50%;                /* décalage à droite de 50% */
+  margin-left: -50vw;        /* contre décalage à gauche pour être pile à 0 */
+  margin-right: -50vw; 
+  position: relative;
+  box-sizing: border-box;
+}
+
+.avis-cta h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'Montserrat' , sans-serif;
+}
+
+.avis-cta p {
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.avis-cta .cta-button {
+  background-color: #fff;
+  color: #e67260;
+  padding: 9px 15px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3 ease;
+}
+
+.avis-cta .cta-button:hover {
+  background-color: #e67260
+}
+
 .presentation {
     display: flex;
     justify-content: center;
@@ -152,17 +193,58 @@ h1 {
     flex-wrap: wrap;
 }
 
-.block {
-    width: 100px;
-    margin: 10px;
-}
 
 .articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 .article {
-    width: 30%;
+  width: 240px; /* chaque article prend environ 30% de la largeur */
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img {
+  width: 100%;
+  height: 140px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.article h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 10px 0 8px;
+}
+
+.article h5 a {
+  text-decoration: none;
+  color: #25A2C3;
+}
+
+.article h5 a:hover {
+  text-decoration: underline;
+}
+
+.article p{
+  font-family: 'Open Sans' , sans-serif;
+  font-size: 13px;
+  color: #777;
+  margin: 8px 0 0;
+  line-height: 1.5;
+  margin: 0;
 }
 
 footer .footer-columns {
