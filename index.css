@@ -88,6 +88,27 @@ h1 {
   color: #fff;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .hero-banner-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-banner-content h2 {
+    font-size: 24px;
+  }
+
+  .hero-banner-content p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
 /* premier block */
 
 .cta-button {
@@ -260,6 +281,19 @@ h1 {
   line-height: 1.5;
   margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
 /* quatrième block */
 
 .footer-blue {
@@ -320,6 +354,54 @@ white-space: nowrap;
  width: 100%;
  margin-top: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-items-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-item {
+    justify-content: center;
+  }
+
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-item p {
+    font-size: 13px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-items-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-item {
+    justify-content: center;
+  }
+
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-item p {
+    font-size: 13px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+}
+
 /* pied-de-page */
 
 
