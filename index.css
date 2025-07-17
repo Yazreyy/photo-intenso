@@ -349,6 +349,7 @@ white-space: nowrap;
     padding: 10px 20px;
   }
 }
+/* media query du haut-de-page*/
 
 @media screen and (max-width: 768px) {
   .articles {
@@ -361,6 +362,7 @@ white-space: nowrap;
     margin-bottom: 20px;
   }
 }
+/* media query du 3ème block */
 
 @media screen and (max-width: 768px) {
   .footer-items-row {
@@ -385,29 +387,7 @@ white-space: nowrap;
     padding-top: 10px;
   }
 }
-@media screen and (max-width: 768px) {
-  .footer-items-row {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .footer-item {
-    justify-content: center;
-  }
-
-  .footer-title {
-    font-size: 20px;
-  }
-
-  .footer-item p {
-    font-size: 13px;
-  }
-
-  .footer-copy {
-    font-size: 12px;
-    padding-top: 10px;
-  }
-}
+/* media query du pied-de-page */
 
 /* Par défaut (desktop): menu visible, burger caché */
 .burger {
@@ -425,7 +405,7 @@ white-space: nowrap;
   z-index: 1001;
 }
 
-/* Responsive - version mobile */
+/* Responsive burger menu - version mobile */
 @media (max-width: 768px) {
   .burger {
     display: block; /* burger visible */
@@ -447,6 +427,7 @@ white-space: nowrap;
     display: flex; /* menu visible quand active */
   }
 }
+/* media query pour avoir le burger sur mobile et pas ordinateur */
 
 @media (max-width: 768px) {
   .central-description {
@@ -465,6 +446,7 @@ white-space: nowrap;
     height: auto;
   }
 }
+/* media query du 2ème block */
 
 
 
