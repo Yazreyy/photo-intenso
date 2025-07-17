@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-    color: #000
+    color: #000;
 }
 
 .container {
@@ -150,7 +150,7 @@ h1 {
   padding: 100px 20px;
   background-color: #e67260;
   color: #fff;
-  width:100vw;                /*largeur 100% de la fenetre* /
+  width:100vw;                /*largeur 100% de la fenetre*/
   position: relative;         /* important pour éviter les débordements */
   left: 50%;                 /* décalage à gauche de 50% */
   right: 50%;                /* décalage à droite de 50% */
@@ -202,9 +202,9 @@ h1 {
     flex-wrap: wrap;
 }
 .article {
-  width: 240px; /* chaque article prend environ 30% de la largeur */
+  width: 200px; /* chaque article prend environ 30% de la largeur */
   background-color: #f8f8f8;
-  border-radius: 6px;
+  border-radius: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   box-sizing: border-box;
   text-align: center;
@@ -247,9 +247,63 @@ h1 {
   margin: 0;
 }
 
-footer .footer-columns {
-    display: flex;
-    justify-content: space-between;
+.footer-blue {
+  background-color: #25A2C3;
+  color: #fff;
+  padding: 40px 20px 20px;
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
+
+.footer-title {
+  font-size: 26px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-item-row {
+  display: flex;
+  justify-content: center; /* centre tous les items horizontalement */
+  gap: 40px; /* espace entre chaque bloc */
+  flex-wrap: nowrap; /* pour gérer les petits écrans */
+  margin-bottom: 30px;
+}
+
+.footer-item {
+display: flex;
+align-items: center;
+gap: 2px;
+color: #fff;
+font-size: 12px;
+white-space: nowrap;
+}
+
+
+.footer-item i {
+  font-size: 18px;
+  min-width: 18px;
+}
+.footer-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-copy {
+ border-top: 1px solid rgba(255,255,255, 0.3);
+ padding-top:15px;
+ padding-bottom: 30px;
+ font-size: 13px; 
+ text-align: center;
+ color: #fff;
+ width: 100%;
+ margin-top: 20px;
 }
 
 
