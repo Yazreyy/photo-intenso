@@ -22,6 +22,64 @@ header {
 }
 /* haut de page */
 
+#menu-burger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+ width: 35px;
+ height: 5px;
+ background-color: black;
+ margin: 6px 0;
+ border-radius: 3px;
+ transition: 0.4s;
+}
+
+.nav-smartphone {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1000;
+ left: 0;
+ top: 0;
+ background-color: rgba(0,0,0,0.95);
+ overflow-x: hidden;
+ transition: 0.5s;
+}
+
+.nav-smartphone-liens {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-smartphone a{
+  display: block;
+  padding: 15px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-smartphone a:hover {
+  color: #ccc;
+}
+
+.bouton-fermer {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
 nav ul {
     display: flex;
     justify-content: center; /*centre les liens horizontalement */
@@ -52,19 +110,22 @@ h1 {
 /* titre (Photo-intenso) */
 
 .hero-banner {
-  width:100vw;                /*largeur 100% de la fenetre*/
-  position: relative;         /* important pour éviter les débordements */
-  left: 50%;                 /* décalage à gauche de 50% */
-  right: 50%;                /* décalage à droite de 50% */
-  margin-left: -50vw;        /* contre décalage à gauche pour être pile à 0 */
-  margin-right: -50vw;       /* contre décalage à droite */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+
   background-image: url("images/paysage.jpg"); 
   background-size: cover;
-  background-position: center;
-  padding: 100px 20px;
-  position: relative;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  box-sizing: border-box;
 }
 
 .hero-banner-content {
@@ -74,6 +135,7 @@ h1 {
   border-radius: 10px;
   color: #000;
   text-align: center;
+  padding-top: 20px;
 }
 
 .hero-banner-content h2 {
@@ -99,7 +161,7 @@ h1 {
   background-color: #f78a76;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-  padding: 12px 24px;
+  padding: 9px 24px;
   border-radius: 2px;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -220,17 +282,19 @@ h1 {
     flex-wrap: wrap;
 }
 .article {
-  width: 200px; /* chaque article prend environ 30% de la largeur */
-  background-color: #f8f8f8;
+  width: 100%; /* chaque article prend environ 30% de la largeur */
+  background-color: #fff;
   border-radius: 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
   font-size: 14px;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border: 2px solid #ccc;
+  max-width: 230px;
+  margin: 15px;
 }
 
 .article-img {
@@ -245,6 +309,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   margin: 10px 0 8px;
+  text-align: left;
 }
 
 .article h5 a {
@@ -264,6 +329,7 @@ h1 {
   margin: 8px 0 0;
   line-height: 1.5;
   margin: 0;
+  text-align: left;
 }
 
 
@@ -272,7 +338,7 @@ h1 {
 .footer-blue {
   background-color: #25A2C3;
   color: #fff;
-  padding: 40px 20px 20px;
+  padding: 20px 0px 10px;
   margin: 0;
   width: 100vw;
   box-sizing: border-box;
@@ -280,6 +346,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 5px;
 
 }
 
@@ -405,26 +472,25 @@ white-space: nowrap;
   z-index: 1001;
 }
 
+
 /* Responsive burger menu - version mobile */
 @media (max-width: 768px) {
-  .burger {
-    display: block; /* burger visible */
+
+  nav .nav-menu {
+    display: none;
+  }
+  .nav-smartphone {
+    width: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
   }
 
-  .nav-menu {
-    display: none;  /* menu caché */
-    flex-direction: column;
-    gap: 15px;
-    background-color: #25A2C3;
-    position: absolute;
-    top: 60px; /* ajuster selon header */
-    right: 10px;
-    padding: 15px;
-    border-radius: 5px;
+  .nav-smartphone.ouvert {
+   width: 100%;
   }
 
-  .nav-menu.active {
-    display: flex; /* menu visible quand active */
+  #menu-burger {
+    display: block;
   }
 }
 /* media query pour avoir le burger sur mobile et pas ordinateur */
