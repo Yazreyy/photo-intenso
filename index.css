@@ -224,7 +224,7 @@ h1 {
 
 .avis-cta {
   text-align: center;
-  padding: 100px 20px;
+  padding: 90px 20px;
   background-color: #e67260;
   color: #fff;
   width:100vw;                /*largeur 100% de la fenetre*/
@@ -347,7 +347,8 @@ h1 {
   align-items: center;
   text-align: center;
   margin-bottom: 5px;
-
+  min-height: 150px;
+  position: relative;
 }
 
 .footer-title {
@@ -362,7 +363,8 @@ h1 {
   justify-content: center; /* centre tous les items horizontalement */
   gap: 40px; /* espace entre chaque bloc */
   flex-wrap: wrap; /* pour gérer les petits écrans */
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  flex-grow:1;
 }
 
 .footer-item {
@@ -385,14 +387,13 @@ white-space: nowrap;
 }
 
 .footer-copy {
- border-top: 1px solid rgba(255,255,255, 0.3);
+ border-top: 0.5px solid rgba(255,255,255, 0.3);
  padding-top:15px;
- padding-bottom: 30px;
  font-size: 13px; 
  text-align: center;
  color: #fff;
  width: 100%;
- margin-top: 20px;
+ margin-top: auto;
 }
 
 /* pied-de-page */
