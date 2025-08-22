@@ -1,178 +1,202 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Photo Intenso</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- police d'écriture google fonts-->
-        <link rel="stylesheet" href="index.css"/>
-        <script src="script.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
+  <title>Photo Intenso</title>
+
+  <!-- police d'écriture google fonts-->
+  <link rel="stylesheet" href="index.css" />
+  <script src="script.js" defer></script>
+
+   <!-- police d'écriture google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
 
 <body>
-
-      <div class="container">
-        <!-- début de la répartition des blocks avec la div .container -->
-        <!-- haut de la page -->
-        <header>
-            <h1>Photo Intenso</h1>
-          <div id="menu-burger" aria-label="menu" role="button" tabindex="0">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-              <!-- menu pour ordinateur -->
-               <nav>
-             <ul class="nav-menu">
-              <li><a href="accueil.html">Accueil</a></li>
-              <li><a href="A propos.html">A propos</a></li>
-              <li><a href="galerie.html">Galerie</a></li>
-              <li><a href="contact.html">Contact</a></li>
-             </ul>
-            </nav>
-            <section id="nav-smartphone" class="nav-smartphone" aria-hidden="true">
-              <a class="bouton-fermer" id="bouton-fermer" aria-label="Fermer menu">&times;</a>
-              <ul class="nav-smartphone-liens">
-              <li><a href="accueil.html">Accueil</a></li>
-              <li><a href="A propos.html">A propos</a></li>
-              <li><a href="galerie.html">Galerie</a></li>
-              <li><a href="contact.html">Contact</a></li>
-             </ul>
-            </section>
-        </header>
-        <!-- fin du haut de la page -->
-        <section class="hero-banner">
-          <!-- premier block -->
-                <div class="hero-banner-content">
-                    <h2>Des images incroyables</h2>
-                    <p>morbi in sem quis dul placerat ornare.Pellentesque odio nisi, euismod<br>
-                        sed arcu cras consecuat lorem ipsum dolor sit amet.
-                    </p>
-                    <!-- ajout d'un bouton -->
-                <a href="#" class="cta-button">Plus d'infos</a>
-                </div>
-                </section>
-                <!-- fin du premier block -->
-
-        <section class="central-description">
-          <!-- deuxième block -->
-                <div class="text-block-gauche">
-                <div class="text-item">
-                    <h3>Paysages</h3>
-                    <p> Morbi in sem quis dui plalorem ipsum<br>
-                           euismod in, pharetra sed ultricies.
-                    </p>
-                </div>
-                <div class="text-item">
-                    <h3>Tous en action</h3>
-                    <p> Tristique yonve cursus jam nulla quam<br>
-                              loreipsu gravida adipscing lorem.
-                    </p>
-                </div>
-                </div>
-
-                <div class="center-image">
-                  <img src="images/pic01.jpg" alt="Photo de telephone">
-                </div>
-
-                <div class="text-block-droite">
-                <div class="text-item">
-                    <h3>Au delà du temps</h3>
-                    <p> Sed apiscing ornare risus. Morbi estes<br>
-                        blandit sit et amet, sagittis magna.
-                    </p>
-                </div>
-                <div class="text-item">
-                    <h3>Portraits</h3>
-                    <p> Pellentesque egestas sem. Suspendisse<br>
-                        modo ullamcorper feugiat lorem.
-                    </p>
-                </div>
-                </div>
-        </section>
-        <!-- fin du deuxième block -->
-        <section class="avis-cta">
-          <!-- troisième block -->
-        <h4>Livrez-nous votre avis</h4>
-        <p>"Morbi in semquis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra<br>
-                      magma etiam lorem ultricies in diam. Sed arcu cras consequat."<br>
-                                                 John H.
-        </p>
-        <!-- ajout d'un bouton -->
-        <a href="#" class="cta-button">C'est à vous !</a>
+  <!-- début de la répartition des blocks avec la div .container -->
+  <main class="container">
+    <!-- haut de la page -->
+    <header>
+      <a href="index.html"
+      <h1>Photo Intenso</h1>
+      </a>
+      <div id="menu-burger" aria-label="menu" role="button" tabindex="0">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- menu pour ordinateur -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="nav-smartphone" class="nav-smartphone" aria-hidden="true">
+        <a class="bouton-fermer" id="bouton-fermer" aria-label="Fermer menu">&times;</a>
+        <ul class="nav-smartphone-liens">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Galerie</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </section>
-      <!-- fin du troisième block -->
+    </header>
+    <!-- fin du haut de la page -->
 
+    <!-- premier block -->
+    <section class="hero-banner">
+      <div class="hero-banner-content">
+        <h2>Des images incroyables</h2>
+      <div class="hero-banner-texte-cadre">
+        <p>morbi in sem quis dul placerat ornare.Pellentesque odio nisi, euismod<br>
+          sed arcu cras consecuat lorem ipsum dolor sit amet.
+        </p>
+        </div>
+        <!-- ajout d'un bouton -->
+        <button type="button" class="cta-button">
+        <a href="#">
+        <span class="cta-button-texte">
+        PLus d'infos
+        </span>
+        </a>
+        </button>
+      </div>
+    </section>
+    <!-- fin du premier block -->
 
-      <section class="articles">
-        <!-- quatrième block -->
+    <!-- deuxième block -->
+    <section class="central-description">
+      <article class="text-block-gauche">
+        <div class="text-item">
+          <h3>Paysages</h3>
+          <p> Morbi in sem quis dui plalorem ipsum<br>
+            euismod in, pharetra sed ultricies.
+          </p>
+        </div>
+        <div class="text-item">
+          <h3>Tous en action</h3>
+          <p> Tristique yonve cursus jam nulla quam<br>
+            loreipsu gravida adipscing lorem.
+          </p>
+        </div>
+      </article>
+
+      <figure class="center-image">
+        <img src="images/pic01.jpg" alt="Photo de telephone">
+      </figure>
+
+      <article class="text-block-droite">
+        <div class="text-item">
+          <h3>Au delà du temps</h3>
+          <p> Sed apiscing ornare risus. Morbi estes<br>
+            blandit sit et amet, sagittis magna.
+          </p>
+        </div>
+        <div class="text-item">
+          <h3>Portraits</h3>
+          <p> Pellentesque egestas sem. Suspendisse<br>
+            modo ullamcorper feugiat lorem.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- fin du deuxième block -->
+
+    <!-- troisième block -->
+    <section class="avis-cta">
+      <h4>Livrez-nous votre avis</h4>
+      <p>"Morbi in semquis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra<br>
+        magma etiam lorem ultricies in diam. Sed arcu cras consequat."<br>
+        John H.
+      </p>
+      <!-- ajout d'un bouton -->
+      <button type="button" class="cta-button">
+      <a href="#">
+      <span class="cta-button-texte">
+      C'est à vous ! 
+      </span>
+      </a>
+      </button>
+    </section>
+    <!-- fin du troisième block -->
+
+    <!-- quatrième block -->
+    <section class="articles">
       <article class="article">
-            <img src="images/pic02.jpg" alt="Sur la riviere" class="article-img">
-         <div class="article-content">
-         <h5><a href="#">Sur la rivière</a></h5>
-         <p>Placerat ornare.Pellentesque od<br>
+        <img src="images/pic02.jpg" alt="Sur la riviere" class="article-img">
+        <div class="article-content">
+          <h5><a href="#">Sur la rivière</a></h5>
+          <p>Placerat ornare.Pellentesque od<br>
             sed euismod in. pharetra itricies<br>
             edarcu cas consequat
-         </p>
-         </div>
+          </p>
+        </div>
       </article>
 
 
       <article class="article">
-            <img src="images/pic03.jpg" alt="Ascension Périlleuse" class="article-img">
-          <div class="article-content">
-          <h5><a href ="#">Ascension périlleuse</a></h5>
+        <img src="images/pic03.jpg" alt="Ascension Périlleuse" class="article-img">
+        <div class="article-content">
+          <h5><a href="#">Ascension périlleuse</a></h5>
           <p>Morbi in sem quis dui placerat<br>
             Pellentesque odio nisi, euismod<br>
             pharetra lorem ipsum
           </p>
-          </div>
+        </div>
       </article>
 
 
       <article class="article">
-            <img src="images/pic04.jpg" alt="Architecture" class="article-img">
-          <div class="article-content">
+        <img src="images/pic04.jpg" alt="Architecture" class="article-img">
+        <div class="article-content">
           <h5><a href="#">Architecture</a></h5>
           <p>Nam dui mi, tincidut quis, accu an<br>
-             porttitor, facilisis luctus que metus<br>
-             vulputate sem magna
+            porttitor, facilisis luctus que metus<br>
+            vulputate sem magna
           </p>
-          </div>
+        </div>
       </article>
-      </section>
-      <!-- fin du quatrième block -->
-     </div>
-     <!-- fin da la div .container pour les blocks -->
-      <footer class="footer-blue">
-        <!-- ajout d'un pied-de-page -->
-        <h6 class="footer-title">Restons en contact</h6>
-        <div class="footer-item-row">
-        <div class="footer-item">
-          <i class="fas fa-phone-alt"></i>
+    </section>
+    <!-- fin du quatrième block -->
+
+  <!-- fin da la div .container pour les blocks --> 
+  </main>
+
+  <!-- ajout d'un pied-de-page -->
+  <footer class="footer-blue">
+    <h6 class="footer-title">Restons en contact</h6>
+    <div class="footer-item-row">
+      <div class="footer-item">
+        <i class="fas fa-phone-alt"></i>
         <p>(33)2 979 79797</p>
-        </div>
-        <div class="footer-item">
-          <i class="fas fa-envelope"></i>
-          <p>information@photoinspiro.bzh</p>
-        </div>
-        <div class="footer-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>123 Kerinon, VANNES, BZH 56000</p>
-        </div>
-        </div>
-        <div class="footer-copy">
-          <p>Exercice Sélection: <strong>GBS Vannes</strong> Réalisé pour: <strong>Kercode</strong></p>
-        </div>
-    </footer>
-    <!-- fin du pied-de-page-->
+      </div>
+      <div class="footer-item">
+        <i class="fas fa-envelope"></i>
+        <p>information@photoinspiro.bzh</p>
+      </div>
+      <div class="footer-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>123 Kerinon, VANNES, BZH 56000</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>Exercice Sélection: <strong>GBS Vannes</strong> Réalisé pour: <strong>Kercode</strong></p>
+    </div>
+  </footer>
+  <!-- fin du pied-de-page-->
 </body>
+
 </html>

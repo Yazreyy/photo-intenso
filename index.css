@@ -1,30 +1,63 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    color: #000;
-}
 /*corps de la page */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+* {
+margin: 0;
+padding: 0;
 }
+
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
 /* répartition des blocks */
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* haut de la page */
 
 header {
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    z-index: 1000;
+  text-align: center;
+  padding: 20px 0;
 }
-/* haut de page */
+header a {
+  text-decoration: none;
+}
 
-#menu-burger{
+/* titre (Photo-intenso) */
+
+header h1 {
+  font-family: "Pacifico" , cursive;
+  font-size: 36px;
+  margin: 0;
+  color: #f78a76;
+}
+
+/* menu du haut de page */
+
+#menu-burger {
   display: none;
   cursor: pointer;
+}
+
+/* Par défaut (desktop): menu visible, burger caché */
+.burger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  z-index: 1001;
 }
 
 .bar1, .bar2, .bar3 {
@@ -57,7 +90,8 @@ header {
   padding: 0;
 }
 
-.nav-smartphone a{
+
+.nav-smartphone a {
   display: block;
   padding: 15px;
   font-size: 24px;
@@ -81,43 +115,31 @@ header {
 
 
 nav ul {
-    display: flex;
-    justify-content: center; /*centre les liens horizontalement */
-    gap: 30px; /*espace entre les liens */
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center; /*centre les liens horizontalement */
+  gap: 30px; /*espace entre les liens */
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
 }
 
 nav ul li a {
-    text-decoration :none;
-    font-family: 'Open Sans', sans-serif;
-    color: #000;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
 }
 
-nav ul li a:hover{
-    text-decoration: underline; /*surlignage au vol*/
-    color:#f78a76
-}
-/* menu du haut de page */
-
-h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 36px;
-  margin: 0;
+nav ul li a:hover {
+  text-decoration: underline; /*surlignage au vol*/
   color: #f78a76
 }
-/* titre (Photo-intenso) */
+
+
+/* premier block */
 
 .hero-banner {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-
-  background-image: url("images/paysage.jpg"); 
+  width: 100%;
+  background-image: url("images/paysage.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -138,40 +160,59 @@ h1 {
   padding-top: 20px;
 }
 
+/* titre h2 (des images incroyables) */
 .hero-banner-content h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
-  color: #f78a76; 
+  color: #f78a76;
   margin-bottom: 20px;
 }
-/* titre h2 (des images incroyables) */
+
+.hero-banner-texte-cadre {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 .hero-banner-content p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  color: #fff;
+  opacity: 1;
   margin-bottom: 30px;
 }
 
-
-/* premier block */
-
+/* ajout d'un bouton au premier block */
 .cta-button {
-  display: inline-block;
+   width: 30%;
   background-color: #f78a76;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
   padding: 9px 24px;
+  border: none;
   border-radius: 2px;
-  text-decoration: none;
   transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #e67260;
+  cursor: pointer;
 }
-/* ajout d'un bouton au premier block */
 
+.cta-button a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* deuxième block */
 .central-description {
   justify-content: center;
   display: flex;
@@ -182,27 +223,33 @@ h1 {
   display: flex;
 }
 
-.text-block {
+.text-block-droite,
+.text-block-gauche {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 90px;
-  width: 25%;
+  justify-content: space-between;
 }
 
 .text-block-gauche {
   text-align: right;
-  align-items: flex-end; /* aligne les éléments à droite dans la colonne */
+  align-items: flex-end;
+  /* aligne les éléments à droite dans la colonne */
 }
 
+.text-block-droite {
+  text-align: left;
+}
 
+.text-item {
+  margin: 15px;
+}
+
+/* titre h3 (Portraits)*/
 .text-item h3 {
   font-family: 'Montserrat', sans-serif;
   color: #25A2C3;
   font-size: 1.2rem;
-  margin: 0;
 }
-/* titre h3 (Portraits)*/
 
 .text-item p {
   color: #777;
@@ -213,86 +260,85 @@ h1 {
 
 .center-image img {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #f2f2f2;
 }
-/* deuxième block */
 
+/* troisième block */
 .avis-cta {
   text-align: center;
   padding: 90px 20px;
   background-color: #e67260;
   color: #fff;
-  width:100vw;                /*largeur 100% de la fenetre*/
-  position: relative;         /* important pour éviter les débordements */
-  left: 50%;                 /* décalage à gauche de 50% */
-  right: 50%;                /* décalage à droite de 50% */
-  margin-left: -50vw;        /* contre décalage à gauche pour être pile à 0 */
-  margin-right: -50vw; 
-  position: relative;
+  width:100%;
   box-sizing: border-box;
 }
 
+/* titre h4 (Livrez-nous votre avis) */
 .avis-cta h4 {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  font-family: 'Montserrat' , sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-/* titre h4 (Livrez-nous votre avis) */
+
 
 .avis-cta p {
   font-size: 0.8rem;
   margin-bottom: 30px;
   font-family: 'Open Sans', sans-serif;
 }
-
+/* ajout d'un bouton */
 .avis-cta .cta-button {
-  background-color: #fff;
+   background-color: #fff;
   color: #e67260;
   padding: 9px 15px;
   border-radius: 6px;
   font-weight: 700;
   text-decoration: none;
-  transition: background-color 0.3 ease;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, opacity 0.3s ease;
+  -moz-transition: background-color 0.3s ease, opacity 0.3s ease;
+  -ms-transition: background-color 0.3s ease, opacity 0.3s ease;
+  -o-transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .avis-cta .cta-button:hover {
-  background-color: #e67260
+  opacity: 0.7;
 }
-/* troisième block */
-/* ajout d'un bouton */
 
+/* quatrième block */
 .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 
 .articles {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
+
 .article {
-  width: 100%; /* chaque article prend environ 30% de la largeur */
+  width: 100%; 
   background-color: #fff;
-  border-radius: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 5px ;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   text-align: left;
   font-size: 14px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border: 2px solid #ccc;
+  border: 1px solid rgb (204, 204, 204, 0.6);
   max-width: 230px;
   margin: 15px;
 }
@@ -305,6 +351,7 @@ h1 {
   object-fit: cover;
 }
 
+/* titre h5 (sur la riviere) */
 .article h5 {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -316,14 +363,13 @@ h1 {
   text-decoration: none;
   color: #25A2C3;
 }
-/* titre h5 (sur la riviere) */
 
 .article h5 a:hover {
   text-decoration: underline;
 }
 
-.article p{
-  font-family: 'Open Sans' , sans-serif;
+.article p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   color: #777;
   margin: 8px 0 0;
@@ -332,21 +378,18 @@ h1 {
   text-align: left;
 }
 
-
-/* quatrième block */
-
+/* pied de page */
 .footer-blue {
   background-color: #25A2C3;
   color: #fff;
   padding: 20px 0px 10px;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 5px;
   min-height: 150px;
   position: relative;
 }
@@ -355,25 +398,26 @@ h1 {
   font-size: 26px;
   color: #fff;
   margin-bottom: 30px;
+  margin-top: 30px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .footer-item-row {
   display: flex;
   justify-content: center; /* centre tous les items horizontalement */
-  gap: 40px; /* espace entre chaque bloc */
-  flex-wrap: wrap; /* pour gérer les petits écrans */
-  margin-bottom: 0;
-  flex-grow:1;
+  gap: 40px;  /* espace entre chaque bloc */
+  flex-wrap: wrap;  /* pour gérer les petits écrans */
+  margin-bottom: 60px;
+  flex-grow: 1;
 }
 
 .footer-item {
-display: flex;
-align-items: center;
-gap: 2px;
-color: #fff;
-font-size: 12px;
-white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
 }
 
 
@@ -381,23 +425,23 @@ white-space: nowrap;
   font-size: 18px;
   min-width: 18px;
 }
+
 .footer-item p {
   margin: 0;
   font-size: 14px;
 }
 
 .footer-copy {
- border-top: 0.5px solid rgba(255,255,255, 0.3);
- padding-top:15px;
- font-size: 13px; 
- text-align: center;
- color: #fff;
- width: 100%;
- margin-top: auto;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+  padding-top: 15px;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin-top: auto;
 }
 
-/* pied-de-page */
-
+/* media query du haut-de-page*/
 @media screen and (max-width: 768px) {
   .hero-banner-content {
     padding: 20px;
@@ -416,10 +460,26 @@ white-space: nowrap;
     font-size: 14px;
     padding: 10px 20px;
   }
-}
-/* media query du haut-de-page*/
 
-@media screen and (max-width: 768px) {
+  .central-description {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-block-gauche,
+  .text-block-droite {
+    width: 90%; 
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: normal;
+  }
+
+  .center-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .articles {
     flex-direction: column;
     align-items: center;
@@ -429,10 +489,29 @@ white-space: nowrap;
     width: 90%;
     margin-bottom: 20px;
   }
-}
-/* media query du 3ème block */
 
-@media screen and (max-width: 768px) {
+  /* media query pour avoir le burger sur mobile et pas ordinateur */
+
+  nav .nav-menu {
+    display: none;
+  }
+  .nav-smartphone {
+    width: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+  }
+
+  .nav-smartphone.ouvert {
+   width: 100%;
+  }
+
+  #menu-burger {
+    margin-left: 20px;
+    display: block;
+  }
+
+  /* media query du pied-de-page */
+
   .footer-items-row {
     flex-direction: column;
     gap: 20px;
@@ -454,67 +533,7 @@ white-space: nowrap;
     font-size: 12px;
     padding-top: 10px;
   }
+
 }
-/* media query du pied-de-page */
-
-/* Par défaut (desktop): menu visible, burger caché */
-.burger {
-  display: none;
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  z-index: 1001;
-}
-
-
-/* Responsive burger menu - version mobile */
-@media (max-width: 768px) {
-
-  nav .nav-menu {
-    display: none;
-  }
-  .nav-smartphone {
-    width: 0;
-    transition: 0.5s;
-    overflow-x: hidden;
-  }
-
-  .nav-smartphone.ouvert {
-   width: 100%;
-  }
-
-  #menu-burger {
-    display: block;
-  }
-}
-/* media query pour avoir le burger sur mobile et pas ordinateur */
-
-@media (max-width: 768px) {
-  .central-description {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .text-block-gauche,
-  .text-block-droite {
-    width: 90%; /* ou 100%, selon le besoin */
-    margin-bottom: 20px;
-  }
-
-  .center-image img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-/* media query du 2ème block */
-
-
 
 
