@@ -23,7 +23,7 @@ Un site vitrine fictif présentant un site de photographie professionnelle. Il s
 
 Le site se compose en plusieurs sections :
 - Header : avec le titre et la navigation (desktop + mobile).
-- Hero-Banner : Une section d'accroche avec titre, texte et bouton.
+- banner : Une section d'accroche avec titre, texte et bouton.
 - Description : présentation de différentes catégories (paysages, portraits, etc...)
 - Avis clients : citation + bouton.
 - Articles : 3 blocs présentants des articles.

@@ -129,6 +129,11 @@ nav ul li a {
   color: #000;
 }
 
+.nav-active {
+  text-decoration: underline;
+  color: #f78a76;
+}
+
 nav ul li a:hover {
   text-decoration: underline; /*surlignage au vol*/
   color: #f78a76
@@ -137,7 +142,7 @@ nav ul li a:hover {
 
 /* premier block */
 
-.hero-banner {
+.banner {
   width: 100%;
   background-image: url("images/paysage.jpg");
   background-size: cover;
@@ -150,7 +155,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.hero-banner-content {
+.banner-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
@@ -161,21 +166,21 @@ nav ul li a:hover {
 }
 
 /* titre h2 (des images incroyables) */
-.hero-banner-content h2 {
+.banner-content h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   color: #f78a76;
   margin-bottom: 20px;
 }
 
-.hero-banner-texte-cadre {
+.banner-texte-cadre {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding-left: 50px;
   padding-right: 50px;
 }
 
-.hero-banner-content p {
+.banner-content p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   opacity: 1;
@@ -183,32 +188,28 @@ nav ul li a:hover {
 }
 
 /* ajout d'un bouton au premier block */
-.cta-button {
-   width: 30%;
+.banner-button {
+  width: 25%;
   background-color: #f78a76;
   padding: 9px 24px;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   transition: background-color 0.3s ease;
-  -webkit-transition: background-color 0.3s ease;
-  -moz-transition: background-color 0.3s ease;
-  -ms-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.banner-button:hover {
   background-color: #e67260;
   cursor: pointer;
 }
 
-.cta-button a {
+.banner-button a {
   text-decoration: none;
   display: inline-block;
   font-size: 0.8rem;
   width: 100%;
   height: 100%;
   font-weight: bold;
-  color: #f78a76;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -293,17 +294,25 @@ nav ul li a:hover {
 }
 /* ajout d'un bouton */
 .avis-cta .cta-button {
-   background-color: #fff;
+  background-color: #fff;
   color: #e67260;
   padding: 9px 15px;
+  border: none;
   border-radius: 6px;
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.3s ease, opacity 0.3s ease;
-  -webkit-transition: background-color 0.3s ease, opacity 0.3s ease;
-  -moz-transition: background-color 0.3s ease, opacity 0.3s ease;
-  -ms-transition: background-color 0.3s ease, opacity 0.3s ease;
-  -o-transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.avis-cta .cta-button a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  color: #f78a76;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .avis-cta .cta-button:hover {
@@ -443,16 +452,16 @@ nav ul li a:hover {
 
 /* media query du haut-de-page*/
 @media screen and (max-width: 768px) {
-  .hero-banner-content {
+  .banner-content {
     padding: 20px;
     text-align: center;
   }
 
-  .hero-banner-content h2 {
+  .banner-content h2 {
     font-size: 24px;
   }
 
-  .hero-banner-content p {
+  .banner-content p {
     font-size: 14px;
   }
 
